@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e293b;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.cv-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-top: 6px solid #d4af37;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #0f172a;
+    font-size: 28px;
+    margin: 0 0 8px 0;
+}
+
+.contacto-linea {
+    font-size: 14px;
+    color: #555555;
+    margin: 0 0 15px 0;
+}
+
+.contacto-linea a {
+    color: #1e3a8a;
+    text-decoration: none;
+}
+
+.linea-separadora-principal {
+    border: none;
+    height: 2px;
+    background-color: #1e3a8a;
+    margin-top: 15px;
+}
+
+.seccion {
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #1e3a8a;
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d4af37;
+}
+
+p {
+    margin: 8px 0;
+    text-align: justify;
+}
+
+.subtitulo-empresa {
+    font-weight: bold;
+    color: #0f172a;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+ul {
+    margin: 5px 0 15px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 4px;
+    color: #444444;
+}
+
+.destacado {
+    font-weight: bold;
+    color: #0f172a;
+}
