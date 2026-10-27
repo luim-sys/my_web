@@ -3,95 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucero Mogollón | Perfil Profesional</title>
+    <title>Lucero Mogollón | Portafolio y CV Jurídico</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Menú de navegación -->
-    <nav class="navegacion">
-        <a href="#presentacion" class="nav-link">Presentación</a>
-        <a href="#cv" class="nav-link">Currículum Vitae</a>
-    </nav>
+    <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <span class="logo">Lucero Mogollón</span>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#perfil">Sobre mí</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#educacion">Educación</a>
+            </nav>
+            <a href="#contacto" class="btn-contacto">Contacto</a>
+        </div>
+    </header>
 
-    <!-- SECCIÓN 1: PRESENTACIÓN -->
-    <section id="presentacion" class="seccion-hero">
-        <div class="tarjeta-presentacion">
-            <span class="etiqueta-destacada">Perfil Profesional</span>
-            <h1>Lucero Isabel Mogollón Valentín</h1>
-            <p class="subtitulo-hero">Estudiante de Derecho de último ciclo | Universidad Científica del Sur</p>
-            <p class="descripcion-hero">
-                Futura abogada con sólida formación académica en Derecho Civil, Sucesiones e Internacional Privado. Cuento con experiencia práctica en redacción de escritos judiciales, saneamiento de expedientes y seguimiento de procesos en el Poder Judicial y estudios jurídicos. Me destaco por mi rigor analítico, compromiso ético y capacidad para encontrar soluciones jurídicas eficientes.
-            </p>
-            <div class="contenedor-botones">
-                <a href="#cv" class="boton-principal">Ver Currículum</a>
-                <a href="https://www.linkedin.com" target="_blank" class="boton-secundario">LinkedIn</a>
+    <!-- SECCIÓN HERO (PRINCIPAL) -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <span class="badge">Estudiante de Derecho — X Ciclo</span>
+            <h1>Excelencia Académica y Rigor Jurídico</h1>
+            <p>Especializada en la defensa de derechos, redacción de escritos y gestión eficiente de procesos legales con un sólido compromiso ético.</p>
+            <a href="#experiencia" class="btn-primary">Ver Experiencia Profesional</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PRESENTACIÓN DESTACADA -->
+    <section id="perfil" class="featured-section">
+        <div class="featured-card">
+            <div class="featured-text">
+                <h2>Perfil Profesional</h2>
+                <p>Estudiante de los últimos años de la carrera de Derecho en la Universidad Científica del Sur. Cuento con experiencia práctica en estudios jurídicos y en el Poder Judicial, destacando por mi capacidad analítica, resolución estratégica de conflictos y constante actualización en el ámbito civil, sucesoral y corporativo.</p>
+            </div>
+            <div class="featured-badge-box">
+                <span class="gold-text">Universidad Científica del Sur</span>
+                <p>Lima, Perú</p>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN 2: CURRÍCULUM VITAE -->
-    <main id="cv" class="contenedor-cv">
+    <!-- SECCIÓN DE TARJETAS (EXPERIENCIA / BLOQUES SEPARADOS) -->
+    <section id="experiencia" class="cards-section">
+        <h2 class="section-title">Experiencia y Trayectoria</h2>
         
-        <header class="encabezado-cv">
-            <h2>Currículum Vitae</h2>
-            <p>Lucero Isabel Mogollón Valentín — Asistente Legal</p>
-        </header>
-
-        <!-- Experiencia Laboral -->
-        <section class="seccion-cv">
-            <h3 class="titulo-seccion">Experiencia Laboral</h3>
-            
-            <div class="bloque-experiencia">
-                <div class="encabezado-bloque">
-                    <h4>Asistente Legal</h4>
-                    <span class="lugar">Estudio Olivares Loayza</span>
+        <div class="cards-grid">
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Asistente Legal</h3>
+                    <span class="card-tag">Estudio Olivares Loayza</span>
                 </div>
-                <ul>
-                    <li>Redacción de escritos en materia civil y penal.</li>
-                    <li>Seguimiento presencial y virtual de expedientes judiciales y fiscales.</li>
-                    <li>Gestión de trámites ante entidades públicas y privadas.</li>
-                </ul>
+                <p>Redacción de escritos en materia civil y penal. Seguimiento detallado de expedientes judiciales y fiscales y gestión de trámites.</p>
             </div>
 
-            <div class="bloque-experiencia">
-                <div class="encabezado-bloque">
-                    <h4>Asistente Legal</h4>
-                    <span class="lugar">Estudio Jurídico Núñez y Asociados</span>
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Asistente Legal</h3>
+                    <span class="card-tag">Estudio Jurídico Núñez</span>
                 </div>
-                <ul>
-                    <li>Revisión de contratos y documentación legal.</li>
-                    <li>Monitoreo de estado de procesos y actualización de clientes.</li>
-                </ul>
+                <p>Revisión exhaustiva de contratos, monitoreo continuo del estado de procesos y comunicación directa con clientes.</p>
             </div>
 
-            <div class="bloque-experiencia">
-                <div class="encabezado-bloque">
-                    <h4>Voluntaria Legal</h4>
-                    <span class="lugar">Poder Judicial - Lima Sur</span>
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Voluntaria Legal</h3>
+                    <span class="card-tag">Poder Judicial - Lima Sur</span>
                 </div>
-                <ul>
-                    <li>Saneamiento de expedientes y calificación de demandas.</li>
-                    <li>Proyección de escritos y apoyo en atención al usuario.</li>
-                    <li>Búsqueda activa de soluciones ante conflictos presentados.</li>
-                </ul>
+                <p>Saneamiento de expedientes, calificación de demandas, proyección de resoluciones y apoyo directo en atención al usuario.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Educación e Idiomas -->
-        <section class="seccion-cv">
-            <h3 class="titulo-seccion">Educación e Idiomas</h3>
-            <ul class="lista-educacion">
-                <li><span class="destacado">Estudiante de Derecho (X Ciclo):</span> Universidad Científica del Sur</li>
-                <li><span class="destacado">Inglés (Nivel B1 - Intermedio):</span> Instituto Cultural Peruano Norteamericano (ICPNA)</li>
-                <li><span class="destacado">Portugués (Básico):</span> Centro de Idiomas</li>
+    <!-- SECCIÓN DE EDUCACIÓN E IDIOMAS -->
+    <section id="educacion" class="education-section">
+        <div class="education-container">
+            <h2>Educación e Idiomas</h2>
+            <ul class="education-list">
+                <li><span class="destacado">Derecho (X Ciclo):</span> Universidad Científica del Sur</li>
+                <li><span class="destacado">Inglés (B1 Intermedio):</span> Instituto Cultural Peruano Norteamericano (ICPNA)</li>
+                <li><span class="destacado">Portugués (Básico):</span> Centro de Idiomas Internacionales</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-    </main>
-
-    <footer class="pie-pagina">
-        <p>© 2026 Lucero Mogollón — Todos los derechos reservados.</p>
+    <!-- PIE DE PÁGINA -->
+    <footer id="contacto" class="footer">
+        <p>© 2026 Lucero Isabel Mogollón Valentín. Todos los derechos reservados.</p>
     </footer>
 
 </body>

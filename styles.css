@@ -1,98 +1,271 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucero Mogollón | Perfil Profesional</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* ESTILOS GENERALES Y RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
 
-    <!-- Menú de navegación -->
-    <nav class="navegacion">
-        <a href="#presentacion" class="nav-link">Presentación</a>
-        <a href="#cv" class="nav-link">Currículum Vitae</a>
-    </nav>
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
 
-    <!-- SECCIÓN 1: PRESENTACIÓN -->
-    <section id="presentacion" class="seccion-hero">
-        <div class="tarjeta-presentacion">
-            <span class="etiqueta-destacada">Perfil Profesional</span>
-            <h1>Lucero Isabel Mogollón Valentín</h1>
-            <p class="subtitulo-hero">Estudiante de Derecho de último ciclo | Universidad Científica del Sur</p>
-            <p class="descripcion-hero">
-                Futura abogada con sólida formación académica en Derecho Civil, Sucesiones e Internacional Privado. Cuento con experiencia práctica en redacción de escritos judiciales, saneamiento de expedientes y seguimiento de procesos en el Poder Judicial y estudios jurídicos. Me destaco por mi rigor analítico, compromiso ético y capacidad para encontrar soluciones jurídicas eficientes.
-            </p>
-            <div class="contenedor-botones">
-                <a href="#cv" class="boton-principal">Ver Currículum</a>
-                <a href="https://www.linkedin.com" target="_blank" class="boton-secundario">LinkedIn</a>
-            </div>
-        </div>
-    </section>
+/* NAVBAR SUPERIOR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0f172a; /* Azul marino elegante */
+    border-bottom: 2px solid #d97706; /* Línea dorada */
+    z-index: 1000;
+    padding: 15px 40px;
+}
 
-    <!-- SECCIÓN 2: CURRÍCULUM VITAE -->
-    <main id="cv" class="contenedor-cv">
-        
-        <header class="encabezado-cv">
-            <h2>Currículum Vitae</h2>
-            <p>Lucero Isabel Mogollón Valentín — Asistente Legal</p>
-        </header>
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        <!-- Experiencia Laboral -->
-        <section class="seccion-cv">
-            <h3 class="titulo-seccion">Experiencia Laboral</h3>
-            
-            <div class="bloque-experiencia">
-                <div class="encabezado-bloque">
-                    <h4>Asistente Legal</h4>
-                    <span class="lugar">Estudio Olivares Loayza</span>
-                </div>
-                <ul>
-                    <li>Redacción de escritos en materia civil y penal.</li>
-                    <li>Seguimiento presencial y virtual de expedientes judiciales y fiscales.</li>
-                    <li>Gestión de trámites ante entidades públicas y privadas.</li>
-                </ul>
-            </div>
+.logo {
+    color: #f8fafc;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 
-            <div class="bloque-experiencia">
-                <div class="encabezado-bloque">
-                    <h4>Asistente Legal</h4>
-                    <span class="lugar">Estudio Jurídico Núñez y Asociados</span>
-                </div>
-                <ul>
-                    <li>Revisión de contratos y documentación legal.</li>
-                    <li>Monitoreo de estado de procesos y actualización de clientes.</li>
-                </ul>
-            </div>
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
 
-            <div class="bloque-experiencia">
-                <div class="encabezado-bloque">
-                    <h4>Voluntaria Legal</h4>
-                    <span class="lugar">Poder Judicial - Lima Sur</span>
-                </div>
-                <ul>
-                    <li>Saneamiento de expedientes y calificación de demandas.</li>
-                    <li>Proyección de escritos y apoyo en atención al usuario.</li>
-                    <li>Búsqueda activa de soluciones ante conflictos presentados.</li>
-                </ul>
-            </div>
-        </section>
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
 
-        <!-- Educación e Idiomas -->
-        <section class="seccion-cv">
-            <h3 class="titulo-seccion">Educación e Idiomas</h3>
-            <ul class="lista-educacion">
-                <li><span class="destacado">Estudiante de Derecho (X Ciclo):</span> Universidad Científica del Sur</li>
-                <li><span class="destacado">Inglés (Nivel B1 - Intermedio):</span> Instituto Cultural Peruano Norteamericano (ICPNA)</li>
-                <li><span class="destacado">Portugués (Básico):</span> Centro de Idiomas</li>
-            </ul>
-        </section>
+.nav-links a:hover {
+    color: #fbbf24; /* Dorado al pasar el mouse */
+}
 
-    </main>
+.btn-contacto {
+    background-color: #d97706;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
 
-    <footer class="pie-pagina">
-        <p>© 2026 Lucero Mogollón — Todos los derechos reservados.</p>
-    </footer>
+.btn-contacto:hover {
+    background-color: #b45309;
+}
 
-</body>
-</html>
+/* SECCIÓN HERO (ESTILO PORTADA) */
+.hero-section {
+    height: 85vh;
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 60px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.badge {
+    background-color: rgba(217, 119, 6, 0.2);
+    color: #fbbf24;
+    border: 1px solid #d97706;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    color: #ffffff;
+    font-size: 2.8rem;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    color: #cbd5e1;
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    background-color: #d97706;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #b45309;
+}
+
+/* SECCIÓN PERFIL DESTACADO */
+.featured-section {
+    max-width: 1100px;
+    margin: -60px auto 40px auto;
+    position: relative;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.featured-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 6px solid #d97706;
+}
+
+.featured-text h2 {
+    color: #0f172a;
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+}
+
+.featured-text p {
+    color: #475569;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+.featured-badge-box {
+    text-align: right;
+    border-left: 2px solid #e2e8f0;
+    padding-left: 30px;
+}
+
+.gold-text {
+    color: #d97706;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* SECCIÓN DE TARJETAS (ESTILO GRID) */
+.cards-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #0f172a;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #0f172a;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header h3 {
+    color: #0f172a;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.card-tag {
+    color: #d97706;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* SECCIÓN DE EDUCACIÓN */
+.education-section {
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+}
+
+.education-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.education-container h2 {
+    color: #0f172a;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.education-list {
+    list-style: none;
+}
+
+.education-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f5f9;
+    color: #475569;
+}
+
+.destacado {
+    font-weight: bold;
+    color: #0f172a;
+}
+
+/* PIE DE PÁGINA */
+.footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    border-top: 2px solid #d97706;
+}
