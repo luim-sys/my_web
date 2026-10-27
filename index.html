@@ -3,64 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Web - Lucero Mogollón</title>
-    <!-- Enlace al archivo de diseño -->
+    <title>Lucero Mogollón | Perfil Profesional</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="cv-card">
+    <!-- Menú de navegación -->
+    <nav class="navegacion">
+        <a href="#presentacion" class="nav-link">Presentación</a>
+        <a href="#cv" class="nav-link">Currículum Vitae</a>
+    </nav>
 
-        <header>
+    <!-- SECCIÓN 1: PRESENTACIÓN -->
+    <section id="presentacion" class="seccion-hero">
+        <div class="tarjeta-presentacion">
+            <span class="etiqueta-destacada">Perfil Profesional</span>
             <h1>Lucero Isabel Mogollón Valentín</h1>
-            <p class="contacto-linea">
-                <strong>Teléfono:</strong> 985 076 578 | <strong>Email:</strong> <a href="mailto:mogollonva@gmail.com">mogollonva@gmail.com</a>
+            <p class="subtitulo-hero">Estudiante de Derecho de último ciclo | Universidad Científica del Sur</p>
+            <p class="descripcion-hero">
+                Futura abogada con sólida formación académica en Derecho Civil, Sucesiones e Internacional Privado. Cuento con experiencia práctica en redacción de escritos judiciales, saneamiento de expedientes y seguimiento de procesos en el Poder Judicial y estudios jurídicos. Me destaco por mi rigor analítico, compromiso ético y capacidad para encontrar soluciones jurídicas eficientes.
             </p>
-            <hr class="linea-separadora-principal">
+            <div class="contenedor-botones">
+                <a href="#cv" class="boton-principal">Ver Currículum</a>
+                <a href="https://www.linkedin.com" target="_blank" class="boton-secundario">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: CURRÍCULUM VITAE -->
+    <main id="cv" class="contenedor-cv">
+        
+        <header class="encabezado-cv">
+            <h2>Currículum Vitae</h2>
+            <p>Lucero Isabel Mogollón Valentín — Asistente Legal</p>
         </header>
 
-        <section class="seccion">
-            <h2>Presentación</h2>
-            <p>
-                Estudiante de la carrera de Derecho en la Universidad Científica del Sur (X Ciclo), con un sólido desempeño académico, compromiso con la excelencia y habilidades desarrolladas en el análisis e interpretación jurídica. Formación integral orientada a la responsabilidad, la ética profesional y la aplicación práctica del conocimiento.
-            </p>
+        <!-- Experiencia Laboral -->
+        <section class="seccion-cv">
+            <h3 class="titulo-seccion">Experiencia Laboral</h3>
+            
+            <div class="bloque-experiencia">
+                <div class="encabezado-bloque">
+                    <h4>Asistente Legal</h4>
+                    <span class="lugar">Estudio Olivares Loayza</span>
+                </div>
+                <ul>
+                    <li>Redacción de escritos en materia civil y penal.</li>
+                    <li>Seguimiento presencial y virtual de expedientes judiciales y fiscales.</li>
+                    <li>Gestión de trámites ante entidades públicas y privadas.</li>
+                </ul>
+            </div>
+
+            <div class="bloque-experiencia">
+                <div class="encabezado-bloque">
+                    <h4>Asistente Legal</h4>
+                    <span class="lugar">Estudio Jurídico Núñez y Asociados</span>
+                </div>
+                <ul>
+                    <li>Revisión de contratos y documentación legal.</li>
+                    <li>Monitoreo de estado de procesos y actualización de clientes.</li>
+                </ul>
+            </div>
+
+            <div class="bloque-experiencia">
+                <div class="encabezado-bloque">
+                    <h4>Voluntaria Legal</h4>
+                    <span class="lugar">Poder Judicial - Lima Sur</span>
+                </div>
+                <ul>
+                    <li>Saneamiento de expedientes y calificación de demandas.</li>
+                    <li>Proyección de escritos y apoyo en atención al usuario.</li>
+                    <li>Búsqueda activa de soluciones ante conflictos presentados.</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="seccion">
-            <h2>Experiencia Laboral</h2>
-
-            <div class="subtitulo-empresa">Asistente Legal - Estudio Olivares Loayza</div>
-            <ul>
-                <li>Proyección, elaboración y presentación de escritos de materia penal y civil.</li>
-                <li>Seguimiento de expedientes judiciales y carpetas fiscales.</li>
-                <li>Análisis del funcionamiento del mundo jurídico y agilización de actividades.</li>
-            </ul>
-
-            <div class="subtitulo-empresa">Asistente Legal - Estudio Jurídico Núñez y Asociados</div>
-            <ul>
-                <li>Revisión de documentos legales como contratos.</li>
-                <li>Seguimiento de casos e informe de avances a clientes.</li>
-                <li>Liderazgo y participación activa en equipo.</li>
-            </ul>
-
-            <div class="subtitulo-empresa">Voluntariado Poder Judicial - Lima Sur</div>
-            <ul>
-                <li>Saneamiento de expedientes y calificación de demandas.</li>
-                <li>Proyección de escritos y apoyo en atención al usuario.</li>
-                <li>Búsqueda activa de soluciones ante conflictos presentados.</li>
+        <!-- Educación e Idiomas -->
+        <section class="seccion-cv">
+            <h3 class="titulo-seccion">Educación e Idiomas</h3>
+            <ul class="lista-educacion">
+                <li><span class="destacado">Estudiante de Derecho (X Ciclo):</span> Universidad Científica del Sur</li>
+                <li><span class="destacado">Inglés (Nivel B1 - Intermedio):</span> Instituto Cultural Peruano Norteamericano (ICPNA)</li>
+                <li><span class="destacado">Portugués (Básico):</span> Centro de Idiomas</li>
             </ul>
         </section>
 
-        <section class="seccion">
-            <h2>Educación e Idiomas</h2>
-            <ul>
-                <li><span class="destacado">Estudiante de Derecho:</span> Universidad Científica del Sur (X Ciclo). Inclinación por el Derecho Civil, Administrativo, Laboral y Ambiental.</li>
-                <li><span class="destacado">Inglés:</span> Instituto Cultural Peruano Norteamericano (ICPNA) - Nivel Intermedio B1 (Certificación TOEFL).</li>
-                <li><span class="destacado">Portugués:</span> Centro de Idiomas Internacionales Científica del Sur - Nivel Básico (En curso).</li>
-            </ul>
-        </section>
+    </main>
 
-    </div>
+    <footer class="pie-pagina">
+        <p>© 2026 Lucero Mogollón — Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
